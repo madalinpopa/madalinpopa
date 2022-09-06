@@ -10,5 +10,4 @@ WORKDIR /opt/madalinpopa
 COPY . .
 
 # Run node
-# CMD ["npm", "run", "dev"]
-CMD ["sleep", "infinity"]
+CMD ["npm", "run", "dev"]
