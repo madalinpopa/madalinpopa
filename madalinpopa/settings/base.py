@@ -15,7 +15,7 @@ from pathlib import Path
 # GENERAL
 # -----------------------------------------------------------------------------
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("DEV_SECRET_KEY")
@@ -136,7 +136,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # -----------------------------------------------------------------------------
 # Mediafiles
 MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "madalinpopa/media/"
+MEDIA_ROOT = BASE_DIR / "/media/"
 
 # STATIC
 # -----------------------------------------------------------------------------

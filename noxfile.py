@@ -6,7 +6,7 @@ import nox
 
 # constants and variables
 LOCAL_REQUIREMENTS = "./requirements/local.txt"
-SOURCE_CODE = "./madalinpopa"
+SOURCE_CODE = "madalinpopa"
 TEST_UNIT_ARGS = ["-v", "0", "--force-color", "--keepdb", "--failfast"]
 TEST_ARGS = ["-v", "0", "--force-color", "--failfast"]
 
