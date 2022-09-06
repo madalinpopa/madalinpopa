@@ -1,0 +1,7 @@
+FROM docker.io/postgres:14-bullseye
+
+# Update system
+RUN apt-get update && apt-get -y upgrade
+
+# Expose django port
+EXPOSE 5432
