@@ -9,8 +9,32 @@ services:
       dockerfile: ./containers/Dockerfile.database
     environment:
       - POSTGRES_USER=${DB_USER}
-      - POSTGRES_PASSWORD=${DB_PASS}
+      - POSTGRES_PASSWORD=${DB_PASS}w
       - POSTGRES_DB=${DB_NAME}
     volumes:
       - pgdata:/var/lib/postgresql/data
+
+  node:
+    image: node
+    container_name: node
+    restart: always
+    environment:
+      - NODE_ENV=development
+  command: npm run dev
+  volumes:
+    - ./:/opt/madalinpopa
+
+  webapp:
+    image: webapp
+    container_name: webapp
+    build:
+      context: .
+      dockerfile: ./containers/Dockerfile.node
+    depends_on:
+      - db
+      - node
+    volumes:
+      - ./:/opt/madalinpopa
+
+
 
