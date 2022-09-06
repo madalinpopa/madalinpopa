@@ -17,3 +17,8 @@ black==22.8.0                   # https://pypi.org/project/black/
 pylint==2.15.0                  # https://pypi.org/project/pylint/
 pylint-django==2.5.3            # https://pypi.org/project/pylint-django/
 mypy==0.971                     # https://pypi.org/project/mypy/
+
+# Utils
+# -----------------------------------------------------------------------
+ipython==8.5.0                  # https://pypi.org/project/ipython/
+pre-commit==2.20.0              # https://pypi.org/project/pre-commit/
