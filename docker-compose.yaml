@@ -17,12 +17,13 @@ services:
   node:
     image: node
     container_name: node
-    restart: always
+    build:
+      context: .
+      dockerfile: ./containers/Dockerfile.node
     environment:
       - NODE_ENV=development
-  command: npm run dev
-  volumes:
-    - ./:/opt/madalinpopa
+    volumes:
+      - ./:/opt/madalinpopa
 
   webapp:
     image: webapp
