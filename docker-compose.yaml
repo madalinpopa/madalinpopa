@@ -8,34 +8,34 @@ services:
       context: .
       dockerfile: ./containers/Dockerfile.database
     environment:
-      - POSTGRES_USER=${DB_USER}
-      - POSTGRES_PASSWORD=${DB_PASS}w
-      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DEV_DB_USER}
+      - POSTGRES_PASSWORD=${DEV_DB_PASS}w
+      - POSTGRES_DB=${DEV_DB_NAME}
     volumes:
       - pgdata:/var/lib/postgresql/data
 
-  node:
-    image: node
-    container_name: node
-    build:
-      context: .
-      dockerfile: ./containers/Dockerfile.node
-    environment:
-      - NODE_ENV=development
-    volumes:
-      - ./:/opt/madalinpopa
+  # node:
+  #   image: node
+  #   container_name: node
+  #   build:
+  #     context: .
+  #     dockerfile: ./containers/Dockerfile.node
+  #   environment:
+  #     - NODE_ENV=development
+  #   volumes:
+  #     - .:/workspace:cached
 
-  webapp:
-    image: webapp
-    container_name: webapp
-    build:
-      context: .
-      dockerfile: ./containers/Dockerfile.node
-    depends_on:
-      - db
-      - node
-    volumes:
-      - ./:/opt/madalinpopa
+  # webapp:
+  #   image: webapp
+  #   container_name: webapp
+  #   build:
+  #     context: .
+  #     dockerfile: ./containers/Dockerfile.node
+  #   depends_on:
+  #     - db
+  #     # - node
+  #   volumes:
+  #     - .:/workspace:cached
 
 
 
