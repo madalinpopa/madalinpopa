@@ -1,0 +1,25 @@
+
+FROM docker.io/python:3.9-slim-bullseye
+
+# Update system
+RUN apt-get update && apt-get -y upgrade
+
+# Set the working directory
+WORKDIR /opt/madalinpopa
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# Install python packages
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r ./requirements/local.txt
+
+# Copy the project files
+COPY . .
+
+# Expose django port
+EXPOSE 8000
+
+# Run Django application
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
