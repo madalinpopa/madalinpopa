@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: containers/Dockerfile.database
+      args:
+        DEV_DB_NAME: ${DEV_DB_NAME}
+        DEV_DB_USER: ${DEV_DB_USER}
+        DEV_DB_PASS: ${DEV_DB_PASS}
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+  # node:
+  #   image: node
+  #   container_name: node
+  #   build:
+  #     context: .
+  #     dockerfile: ./containers/Dockerfile.node
+  #   environment:
+  #     - NODE_ENV=development
+  #   volumes:
+  #     - .:/workspace:cached
+  # webapp:
+  #   image: webapp
+  #   container_name: webapp
+  #   build:
+  #     context: .
+  #     dockerfile: ./containers/Dockerfile.node
+  #   depends_on:
+  #     - db
+  #     # - node
+  #   volumes:
+  #     - .:/workspace:cached
+
+volumes:
+  postgres-data: null
