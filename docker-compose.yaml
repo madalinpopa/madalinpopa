@@ -2,18 +2,16 @@ version: '3.9'
 
 services:
   db:
-    image: db
-    container_name: db
     build:
       context: .
-      dockerfile: ./containers/Dockerfile.database
-    environment:
-      - POSTGRES_USER=${DEV_DB_USER}
-      - POSTGRES_PASSWORD=${DEV_DB_PASS}w
-      - POSTGRES_DB=${DEV_DB_NAME}
+      dockerfile: containers/Dockerfile.database
+      args:
+        DEV_DB_NAME: ${DEV_DB_NAME}
+        DEV_DB_USER: ${DEV_DB_USER}
+        DEV_DB_PASS: ${DEV_DB_PASS}
+    restart: unless-stopped
     volumes:
-      - pgdata:/var/lib/postgresql/data
-
+      - postgres-data:/var/lib/postgresql/data
   # node:
   #   image: node
   #   container_name: node
@@ -24,7 +22,6 @@ services:
   #     - NODE_ENV=development
   #   volumes:
   #     - .:/workspace:cached
-
   # webapp:
   #   image: webapp
   #   container_name: webapp
@@ -37,5 +34,5 @@ services:
   #   volumes:
   #     - .:/workspace:cached
 
-
-
+volumes:
+  postgres-data: null

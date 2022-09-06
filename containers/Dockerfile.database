@@ -1,7 +1,15 @@
 FROM docker.io/postgres:14-bullseye
 
+ARG DEV_DB_NAME
+ARG DEV_DB_USER
+ARG DEV_DB_PASS
+
 # Update system
 RUN apt-get update && apt-get -y upgrade
+
+ENV POSTGRES_USER=$DEV_DB_USER
+ENV POSTGRES_PASSWORD=$DEV_DB_PASS
+ENV POSTGRES_DB=$DEV_DB_NAME
 
 # Expose django port
 EXPOSE 5432
