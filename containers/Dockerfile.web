@@ -24,8 +24,6 @@ COPY . .
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r ./requirements/local.txt
 
-# Add local commands to path
-ENV PATH="${HOME}/.local/bin:${PATH}"
 
 # Expose django port
 EXPOSE 8000
