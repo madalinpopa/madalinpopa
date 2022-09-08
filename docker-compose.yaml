@@ -2,6 +2,8 @@ version: '3.9'
 
 services:
   db:
+    image: db
+    container_name: db
     build:
       context: .
       dockerfile: containers/Dockerfile.database
@@ -10,6 +12,7 @@ services:
         DEV_DB_USER: ${DEV_DB_USER}
         DEV_DB_PASS: ${DEV_DB_PASS}
     restart: unless-stopped
+    network_mode: host
     volumes:
       - postgres-data:/var/lib/postgresql/data
   # node:
@@ -28,9 +31,12 @@ services:
     build:
       context: .
       dockerfile: ./containers/Dockerfile.web
+    environment:
+      - DEV_SECRET_KEY=${DEV_SECRET_KEY}
     depends_on:
       - db
       # - node
+    network_mode: host
     volumes:
       - .:/opt/madalinpopa
 
