@@ -22,17 +22,17 @@ services:
   #     - NODE_ENV=development
   #   volumes:
   #     - .:/workspace:cached
-  # webapp:
-  #   image: webapp
-  #   container_name: webapp
-  #   build:
-  #     context: .
-  #     dockerfile: ./containers/Dockerfile.node
-  #   depends_on:
-  #     - db
-  #     # - node
-  #   volumes:
-  #     - .:/workspace:cached
+  webapp:
+    image: webapp
+    container_name: webapp
+    build:
+      context: .
+      dockerfile: ./containers/Dockerfile.web
+    depends_on:
+      - db
+      # - node
+    volumes:
+      - .:/opt/madalinpopa
 
 volumes:
   postgres-data: null
