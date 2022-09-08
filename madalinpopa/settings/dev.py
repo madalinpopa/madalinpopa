@@ -28,6 +28,21 @@ TEMPLATES = [
     },
 ]
 
+# DATABASES
+# -----------------------------------------------------------------------------
+# Database settings
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": os.getenv("DEV_DB_NAME"),
+        "USER": os.getenv("DEV_DB_USER"),
+        "PASSWORD": os.getenv("DEV_DB_PASS"),
+        "HOST": os.getenv("DEV_DB_HOST"),
+        "PORT": "5432",
+    }
+}
+
+
 # For tests to speed up
 # -----------------------------------------------------------------------------
 PASSWORD_HASHERS = [
