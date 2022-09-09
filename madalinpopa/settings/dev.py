@@ -14,7 +14,7 @@ DEBUG = True
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "mihaelamocanu/templates"],
+        "DIRS": [BASE_DIR / "madalinpopa/templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
