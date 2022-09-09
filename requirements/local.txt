@@ -6,6 +6,8 @@ coverage[toml]==6.4.4             # https://pypi.org/project/coverage/
 django-coverage-plugin==2.0.3   # https://pypi.org/project/django-coverage-plugin/
 Faker==14.2.0                   # https://pypi.org/project/Faker/
 nox==2022.1.7                   # https://pypi.org/project/nox/
+pytest==7.1.3                   # https://pypi.org/project/pytest/
+pytest-django==4.5.2            # https://pypi.org/project/pytest-django/
 
 # Formatting
 # -----------------------------------------------------------------------
