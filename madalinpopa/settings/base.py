@@ -59,6 +59,13 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+# MIGRATIONS
+# -----------------------------------------------------------------------------
+# https://docs.djangoproject.com/en/4.0/ref/settings/#migration-modules
+MIGRATION_MODULES = {
+    "blog": "madalinpopa.contrib.migrations.blog",
+}
+
 # URLS CONFIG
 # -----------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/4.0/ref/settings/#root-urlconf
