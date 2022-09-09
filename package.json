@@ -31,11 +31,6 @@
     "webpack-cli": "^4.10.0",
     "webpack-merge": "^5.8.0"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
   "dependencies": {
     "alpinejs": "^3.10.3",
     "htmx.org": "^1.8.0"
