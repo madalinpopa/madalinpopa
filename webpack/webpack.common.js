@@ -30,38 +30,18 @@ module.exports = {
             import: path.resolve(__dirname, '../madalinpopa/assets/index.js'),
             dependOn: ['htmx', 'alpine'], // ['htmx', 'vue']
         },
-        /**
-         * core.js entrypoint
-         */
-        core: {
-            import: path.resolve(
-                __dirname,
-                '../mihaelamocanu/assets/modules/core.js'
-            ),
-            dependOn: 'index',
-        },
-        /**
-         * store.js entrypoint
-         */
-        store: {
-            import: path.resolve(
-                __dirname,
-                '../mihaelamocanu/assets/modules/store.js'
-            ),
-            dependOn: 'index',
-        },
     },
     /**
      * OUTPUT
      *
      * The output property tells webpack where to emit the bundles it creates
-     * and how to name these files. All the files are outputed to ../mihaelamocanu/static/js/
+     * and how to name these files. All the files are outputed to ../madalinpopa/static/js/
      */
     output: {
         /**
          * Thi is the path where the bundle files will be placed
          */
-        path: path.resolve(__dirname, '../mihaelamocanu/static/js/'),
+        path: path.resolve(__dirname, '../madalinpopa/static/js/'),
         /**
          * This is the public path where the server will look for static files
          * Something like https://localhost:8000/static/js/index.bundle.js
@@ -71,10 +51,6 @@ module.exports = {
          * This is the file name that will result from the entries
          */
         filename: '[name].bundle.js',
-        /**
-         * This settings is for assets, to specify where to be placed.
-         */
-        assetModuleFilename: '../../[hash][ext]',
         /**
          * Everytime webpack runs will clear the '../mihaelamocanu/static/js/ folder
          */
@@ -105,7 +81,6 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: ['@babel/preset-env'],
-                        plugins: ['transform-regenerator'],
                     },
                 },
             },
@@ -116,17 +91,6 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
-            },
-            /**
-             * Rule 2: understand and parse the image files
-             * Using webpac assets to load image files
-             */
-            {
-                test: /\.webp/i,
-                type: 'asset',
-                generator: {
-                    filename: '../images/[hash][ext]',
-                },
             },
         ],
     },
