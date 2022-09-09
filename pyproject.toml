@@ -36,13 +36,14 @@ plugins = ['django_coverage_plugin']
 [tool.coverage.django_coverage_plugin]
 template_extensions = 'html, txt, tex, email'
 
+[tool.pylint.MASTER]
+load-plugins=['pylint_django']
+django-settings-module='madalinpopa.settings.dev'
+
+
 [tool.pylint.'MESSAGES CONTROL']
 disable=['fixme', 'too-few-public-methods', 'too-many-arguments', 'too-many-function-args']
 good-names=['pk', 'k']
-
-[tool.pylint.MASTER]
-load-plugins = ['pylint_django']
-django-settings-module='madalinpopa.settings.dev'
 
 [tool.pylint.similarities]
 min-similarity-lines=10
