@@ -17,6 +17,7 @@ nox.options.default_venv_backend = "none"
 
 # Unit tests base commands
 cmd_python_test = ["python", "manage.py", "test"]
+cmd_test_args = ["-v", "0", "--force-color", "--keepdb", "--failfast"]
 
 #
 # FORMAT AND LINTING CODE TASKS
@@ -39,3 +40,12 @@ def lint_code(session):
         "colorized",
         SOURCE_CODE,
     )
+
+
+#
+# RUNNING TESTS COMMANDS
+# ----------------------------------------------------
+@nox.session(name="test-unit")
+def test_unit(session):
+    """Run unit tests"""
+    session.run(*cmd_python_test, *cmd_test_args)

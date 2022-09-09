@@ -3,9 +3,12 @@ log_cli = true
 log_cli_level = "INFO"
 log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
 log_cli_date_format = "%Y-%m-%d %H:%M:%S"
-minversion = '6.0'
+minversion = '7.0'
 addopts = '-v -x --tb=short -p no:warnings'
 filterwarnings = ['ignore::DeprecationWarning']
+testpaths = [
+    "tests",
+]
 
 [tool.isort]
 profile = 'django'
@@ -33,13 +36,14 @@ plugins = ['django_coverage_plugin']
 [tool.coverage.django_coverage_plugin]
 template_extensions = 'html, txt, tex, email'
 
+[tool.pylint.MASTER]
+load-plugins=['pylint_django']
+django-settings-module='madalinpopa.settings.dev'
+
+
 [tool.pylint.'MESSAGES CONTROL']
 disable=['fixme', 'too-few-public-methods', 'too-many-arguments', 'too-many-function-args']
 good-names=['pk', 'k']
-
-[tool.pylint.MASTER]
-load-plugins = ['pylint_django']
-django-settings-module='madalinpopa.settings.dev'
 
 [tool.pylint.similarities]
 min-similarity-lines=10
