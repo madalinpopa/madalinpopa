@@ -22,6 +22,7 @@
     "@babel/preset-env": "^7.19.0",
     "autoprefixer": "^10.4.8",
     "babel-loader": "^8.2.5",
+    "compression-webpack-plugin": "^10.0.0",
     "css-minimizer-webpack-plugin": "^4.0.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.16",
@@ -29,5 +30,14 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-merge": "^5.8.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.3",
+    "htmx.org": "^1.8.0"
   }
 }
