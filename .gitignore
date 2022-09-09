@@ -128,3 +128,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Ignore build files
+madalinpopa/static/css/**
+madalinpopa/static/js/**
