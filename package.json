@@ -2,16 +2,19 @@
   "name": "madalinpopa.com",
   "version": "1.0.0",
   "description": "My website",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "webpack --watch --config ./webpack/webpack.config.dev.js",
+    "build:prod": "webpack --config ./webpack/webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/madalinpopa/madalinpopa.com.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "personal website",
+    "django"
+  ],
+  "author": "contact@madalinpopa.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/madalinpopa/madalinpopa.com/issues"
