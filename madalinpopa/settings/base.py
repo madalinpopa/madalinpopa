@@ -31,7 +31,7 @@ SITE_ID = 1
 
 # APPS
 # -----------------------------------------------------------------------------
-INSTALLED_APPS = [
+DJANGO_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 ]
 
+CUSTOM_APPS = [
+    "madalinpopa.apps.blog.apps.BlogConfig",
+]
+
+INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS
 
 # MIDDLEWARE
 # -----------------------------------------------------------------------------
