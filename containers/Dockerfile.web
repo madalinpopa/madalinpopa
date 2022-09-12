@@ -1,5 +1,5 @@
 
-FROM docker.io/python:3.9-slim-bullseye
+FROM docker.io/python:3.9-slim-bullseye as django
 
 # Update system
 RUN apt-get update && apt-get -y upgrade
@@ -18,12 +18,16 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Copy the project files
-COPY . .
+COPY requirements /var/tmp/requirements
 
 # Install python packages
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r ./requirements/local.txt
+    pip install --no-cache-dir -r /var/tmp/requirements/local.txt
 
+FROM django
+
+# Copy the project files
+COPY . .
 
 # Expose django port
 EXPOSE 8000
