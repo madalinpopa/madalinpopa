@@ -2,7 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/python-3-postgres
 // Update the VARIANT arg in docker-compose.yml to pick a Python version
 {
-	"name": "Python 3 & PostgreSQL & Node",
+	"name": "madalinpopa.com",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "base",
 	"workspaceFolder": "/workspace",
@@ -28,10 +28,23 @@
 			},
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
+				"octref.vetur",
 				"ms-python.python",
-				"ms-python.vscode-pylance",
-				"ms-azuretools.vscode-docker",
+				"redhat.vscode-xml",
+				"bungcip.better-toml",
+				"bibhasdn.django-html",
+				"austenc.tailwind-docs",
 				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"batisteo.vscode-django",
+				"shakram02.bash-beautify",
+				"ms-python.vscode-pylance",
+				"bradlc.vscode-tailwindcss",
+				"thebarkman.vscode-djaneiro",
+				"ms-azuretools.vscode-docker",
+				"pcbowers.alpine-intellisense",
+				"ms-ossdata.vscode-postgresql",
+				"mads-hartmann.bash-ide-vscode",
 				"visualstudioexptteam.vscodeintellicode"
 			]
 		}
@@ -43,7 +56,7 @@
 	// 	8000
 	// ],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip install --user -r requirements.txt",
+	"postCreateCommand": "pip install --user -r requirements/local.txt",
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"features": {
