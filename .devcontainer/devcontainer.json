@@ -28,10 +28,23 @@
 			},
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
+				"octref.vetur",
 				"ms-python.python",
-				"ms-python.vscode-pylance",
-				"ms-azuretools.vscode-docker",
+				"redhat.vscode-xml",
+				"bungcip.better-toml",
+				"bibhasdn.django-html",
+				"austenc.tailwind-docs",
 				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"batisteo.vscode-django",
+				"shakram02.bash-beautify",
+				"ms-python.vscode-pylance",
+				"bradlc.vscode-tailwindcss",
+				"thebarkman.vscode-djaneiro",
+				"ms-azuretools.vscode-docker",
+				"pcbowers.alpine-intellisense",
+				"ms-ossdata.vscode-postgresql",
+				"mads-hartmann.bash-ide-vscode",
 				"visualstudioexptteam.vscodeintellicode"
 			]
 		}
