@@ -3,7 +3,7 @@
 # ********************************************************
 # * Docker Django - Multi-stage, base image             *
 # ********************************************************
-FROM docker.io/python:3.9-slim-bullseye AS base
+FROM python:3.9-slim-bullseye AS base
 
 # Set the working directory
 WORKDIR /app
@@ -31,7 +31,7 @@ RUN pip install --upgrade pip && \
 # ********************************************************
 # * Docker Django - Multi-stage, final image             *
 # ********************************************************
-FROM docker.io/python:3.9-slim-bullseye
+FROM python:3.9-slim-bullseye
 
 # Create a new user
 RUN useradd --create-home madalinpopa
@@ -42,7 +42,7 @@ USER madalinpopa
 # Set the working directory
 WORKDIR /home/madalinpopa
 
-COPY --from=builder /opt/venv /opt/venv
+COPY --from=base /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Copy the project files

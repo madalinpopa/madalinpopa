@@ -4,6 +4,8 @@ services:
   db:
     image: db
     container_name: db
+    env_file:
+      - .env
     build:
       context: .
       dockerfile: containers/Dockerfile.database
@@ -12,9 +14,25 @@ services:
         DEV_DB_USER: ${DEV_DB_USER}
         DEV_DB_PASS: ${DEV_DB_PASS}
     restart: unless-stopped
-    network_mode: host
+    ports:
+      - "5432:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
+
+  webapp:
+    image: webapp
+    container_name: webapp
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: containers/Dockerfile.web
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/home/madalinpopa
 
 volumes:
   postgres-data: null
