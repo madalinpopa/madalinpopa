@@ -3,8 +3,6 @@
 # Set Environments
 set -e
 
-
-
 if [ ! -f ".env" ]; then
 
     # Create the .env file
@@ -27,3 +25,13 @@ if [ ! -f ".env" ]; then
     echo " " >>.env
 
 fi
+
+# =========================================
+# Install node packages
+# =========================================
+yarn install
+
+# =========================================
+# Build docker images
+# =========================================
+docker compose build
