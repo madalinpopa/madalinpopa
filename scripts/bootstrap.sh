@@ -5,7 +5,7 @@ set -e
 
 
 
-if [ ! -f "../.env" ]; then
+if [ ! -f ".env" ]; then
 
     # Create the .env file
     touch .env
