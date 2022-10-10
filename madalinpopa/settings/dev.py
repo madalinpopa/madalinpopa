@@ -5,7 +5,6 @@ from .base import *
 
 # GENERAL
 # -----------------------------------------------------------------------------
-DOMAIN = "http://localhost:8000/"
 
 DEBUG = True
 
@@ -34,10 +33,10 @@ TEMPLATES = [
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": os.getenv("DEV_DB_NAME"),
-        "USER": os.getenv("DEV_DB_USER"),
-        "PASSWORD": os.getenv("DEV_DB_PASS"),
-        "HOST": os.getenv("DEV_DB_HOST"),
+        "NAME": os.getenv("DB_NAME"),
+        "USER": os.getenv("DB_USER"),
+        "PASSWORD": os.getenv("DB_PASS"),
+        "HOST": os.getenv("DB_HOST"),
         "PORT": "5432",
     }
 }
