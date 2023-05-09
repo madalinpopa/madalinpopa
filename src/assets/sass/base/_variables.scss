@@ -1,6 +1,6 @@
 // Colors
 $light-color: #fff;
-$dark-color: #202020;
+$dark-color: #353839;
 $primary-color: #fcbe5b;
 $secondary-color: #f5604a;
 
@@ -10,7 +10,3 @@ $breakpoints: (
   'medium': 992px,
   'large':  1200px
 ) !default;
-
-body {
-  background-color: $secondary-color;
-}

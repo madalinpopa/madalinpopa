@@ -3,3 +3,8 @@
 @use 'mixins';
 @use 'utils';
 @use 'variables';
+
+body {
+    font-family: Ubuntu, serif;
+    background-color: variables.$dark-color;
+}
