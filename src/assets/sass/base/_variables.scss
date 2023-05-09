@@ -1,0 +1,16 @@
+// Colors
+$light-color: #fff;
+$dark-color: #202020;
+$primary-color: #fcbe5b;
+$secondary-color: #f5604a;
+
+// Responsive breakpoints
+$breakpoints: (
+  'small':  767px,
+  'medium': 992px,
+  'large':  1200px
+) !default;
+
+body {
+  background-color: $secondary-color;
+}

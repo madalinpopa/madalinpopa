@@ -1,0 +1,10 @@
+
+<!-- JS LINKS -->
+{{ $index := resources.Get "js/main.js" }}
+
+{{ if .Site.IsServer }}
+    <script src="{{ $index.RelPermalink }}"></script>
+{{ else }}
+    {{ $indexProd := $index | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $indexProd.RelPermalink }}"></script>
+{{ end }}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {{ partial "common/head.html" . }}
+
+<body>
+    <!-- Header block -->
+    {{ block "header" . }}
+    <div class="row drop-shadow-md">
+        <div class="container">
+            <h1>Hello from header</h1>
+        </div>
+    </div>
+    {{ end }}
+
+    <!-- Main block -->
+    {{ block "main" . }}
+    <h2>Main content</h2>
+    {{ end }}
+
+    <!-- Footer block -->
+    {{ block "footer" . }}
+    <h3>Footer</h3>
+    {{ end }}
+
+    <!-- Javascript partials -->
+    {{ partial "common/scripts.html" }}
+
+</body>
+
+</html>
