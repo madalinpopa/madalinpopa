@@ -1,0 +1,8 @@
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.highlight]
+lineNos = true
+
+[markup.goldmark.renderer]
+unsafe = true
