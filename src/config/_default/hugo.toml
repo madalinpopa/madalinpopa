@@ -4,8 +4,3 @@ title = "Madalin Popa"
 enableEmoji = true
 enableGitInfo = true
 
-[menu]
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 10
