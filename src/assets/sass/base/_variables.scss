@@ -6,7 +6,9 @@ $secondary-color: #f5604a;
 
 // Responsive breakpoints
 $breakpoints: (
-  'small':  767px,
-  'medium': 992px,
-  'large':  1200px
+  'sm':  649px,
+  'md': 768px,
+  'lg':  1024px,
+  'xl': 1280px,
+  '2xl': 1536px,
 ) !default;

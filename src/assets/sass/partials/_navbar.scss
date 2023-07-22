@@ -1,0 +1,11 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.navbar {
+
+    margin: 1rem 0;
+
+    &__container {
+        @include container();
+    }
+}
