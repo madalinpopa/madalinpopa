@@ -73,6 +73,17 @@ var __webpack_exports__ = {};
 /* harmony import */ var boxicons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(264);
 /* harmony import */ var boxicons__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(boxicons__WEBPACK_IMPORTED_MODULE_0__);
 
+
+// Hamburger menu
+var hamburger = document.querySelector('.hamburger');
+var checkbox = document.querySelector("input[name='hamburger']");
+checkbox.addEventListener("change", function () {
+  if (this.checked) {
+    hamburger.classList.add('checked');
+  } else {
+    hamburger.classList.remove('checked');
+  }
+});
 })();
 
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.

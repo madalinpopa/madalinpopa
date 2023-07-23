@@ -1,6 +1,7 @@
 // Colors
 $light-color: #fff;
 $dark-color: #353839;
+$dark-lighter-color: #505050;
 $primary-color: #fcbe5b;
 $secondary-color: #f5604a;
 
@@ -12,3 +13,14 @@ $breakpoints: (
   'xl': 1280px,
   '2xl': 1536px,
 ) !default;
+
+// Hamburger button properties
+$hamburger-bg-color: $dark_color;
+$hamburger-bar-width: 45px;
+$hamburger-bar-height: 6px;
+$hamburger-bar-gap: 6px;
+$hamburger-margin: 1rem;
+$hamburger-height: calc($hamburger-bar-height * 3 + $hamburger-bar-gap * 2);
+$hamburger-animation-timing: 200ms ease-in-out
+
+
