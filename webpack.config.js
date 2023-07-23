@@ -8,15 +8,15 @@ module.exports = {
   mode: 'production',
   entry: [
     path.resolve(__dirname, 'src/assets/app.js'),
-    path.resolve(__dirname, 'src/assets/sass/main.scss'),
+    // path.resolve(__dirname, 'src/assets/css/main.css'),
   ],
   /**
    * Output configuration.
    */
   output: {
-      path: path.resolve(__dirname, 'src/assets/js/'),
-      filename: 'main.js',
-      clean: true
+    path: path.resolve(__dirname, 'src/assets/js/'),
+    filename: 'main.js',
+    clean: true
   },
   /**
    * Module configuration.
@@ -42,33 +42,33 @@ module.exports = {
        * CSS loader.
        */
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.css$/,
         exclude: '/node_modules/',
         use: [
-            // Extract css to own file
-            MiniCssExtractPlugin.loader,
-            // Translates CSS into CommonJS
-            "css-loader",
-            // Use postcss
-            "postcss-loader",
-            // Compiles Sass to CSS
-            "sass-loader",
+          // Extract css to own file
+          MiniCssExtractPlugin.loader,
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Use postcss
+          "postcss-loader",
+          // Compiles Sass to CSS
+          // "sass-loader",
         ]
       }
-      ]
-    },
+    ]
+  },
   /**
    * Optimization configuration.
    */
   optimization: {
-      minimize: false,
+    minimize: false,
   },
-    /**
-     * Plugins configuration.
-     */
-    plugins: [
-        new MiniCssExtractPlugin({
-            filename: '../css/[name].css',
-        }),
-    ]
+  /**
+   * Plugins configuration.
+   */
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '../css/[name].css',
+    }),
+  ]
 }

@@ -1,3 +1,4 @@
+import './css/main.css'
 import 'boxicons'
 
 // Hamburger menu
