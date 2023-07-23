@@ -5,6 +5,23 @@
         <!-- Navbar partials -->
         {{ partial "common/navbar.html" }}
 
+        <div class="home__container">
+
+            <div class="home__profile-picture">
+                {{ with resources.Get "images/profile.webp" }}
+                <img src="{{ .RelPermalink }}" alt="Madalin Popa">
+                {{ end }}
+            </div>
+
+            <div class="home__text">
+                <h2 class="headline">Madalin Popa</h2>
+                <p class="body">
+                    Detail-oriented Full-Stack Developer and Self-Taught Programmer with over 8+ years of experience in
+                    software development and troubleshooting
+                </p>
+            </div>
+
+        </div>
     </div>
 </main>
 {{ end }}

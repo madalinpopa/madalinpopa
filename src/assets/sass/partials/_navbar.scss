@@ -6,12 +6,17 @@
     display: flex;
     gap: 1rem;
 
+    a {
+        letter-spacing: 0.1rem;
+    }
+
     &__mobile-menu {
 
         $x-width: calc($hamburger-height * 1.414213562);
         @include respond-to('md') {
             display: none;
         }
+        max-height: 10rem;
 
         .hamburger {
             display: flex;
@@ -75,12 +80,13 @@
             translate: -100%;
             padding: 1rem 1rem;
             padding-top: calc($hamburger-height + $hamburger-margin + 2rem);
-            // background-color: $dark-lighter-color;
+            background-color: $dark-color;
             color: $light-color;
             max-width: 10rem;
             min-width: 8rem;
             height: 100vh;
             @include bottom-shadow();
+
         }
 
         .menu {
@@ -129,9 +135,7 @@
             text-align: right;
         }
 
-        a {
-            letter-spacing: 0.1rem;
-        }
+
 
         a:hover {
             color: $secondary-color;
