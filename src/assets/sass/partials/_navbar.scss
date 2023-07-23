@@ -96,6 +96,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
 
         @include respond-to('md') {
             @include container-2xl(2rem);
