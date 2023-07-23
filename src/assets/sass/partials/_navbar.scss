@@ -3,11 +3,15 @@
 
 .navbar {
 
-
+    display: flex;
+    gap: 1rem;
 
     &__mobile-menu {
 
         $x-width: calc($hamburger-height * 1.414213562);
+        @include respond-to('md') {
+            display: none;
+        }
 
         .hamburger {
             display: flex;
@@ -18,6 +22,7 @@
             left: $hamburger-margin;
             z-index: 2;
             cursor: pointer;
+
 
             &::before, &::after, & input {
                 content: "";
@@ -85,10 +90,41 @@
 
     }
 
-
-
     &__container {
-        @include container();
+        position: absolute;
+        padding: 1rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @include respond-to('md') {
+            @include container-2xl(2rem);
+            position: static;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__social {
+        display: flex;
+        gap: 1rem;
+
+    }
+
+    &__menu {
         display: none;
+        @include respond-to('md') {
+            display: block;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: right;
+        }
+
+        a:hover {
+            color: $secondary-color;
+        }
     }
 }
