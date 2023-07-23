@@ -78,6 +78,7 @@
             // background-color: $dark-lighter-color;
             color: $light-color;
             max-width: 10rem;
+            min-width: 8rem;
             height: 100vh;
             @include bottom-shadow();
         }
@@ -110,6 +111,10 @@
         display: flex;
         gap: 1rem;
 
+        a:hover {
+            color: $secondary-color;
+        }
+
     }
 
     &__menu {
@@ -122,6 +127,10 @@
             flex-direction: column;
             gap: 0.5rem;
             text-align: right;
+        }
+
+        a {
+            letter-spacing: 0.1rem;
         }
 
         a:hover {
