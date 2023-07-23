@@ -1,12 +1,15 @@
-<div class="navbar">
+<div class="flex gap-4">
 
-    <div class="navbar__mobile-menu">
+    <div class="md:hidden">
 
-        <label class="hamburger">
-            <input type="checkbox" name="hamburger">
+        <label
+            class="flex flex-col gap-[6px] absolute top-4 left-4 z-10 after:content-[''] before:content-[''] w-[var(--hamburger-bar-width)] h-[var(--hamburger-bar-height)] bg-white rounded-full transition duration-200 origin-center">
+            <input
+                class="w-[var(--hamburger-bar-width)] h-[var(--hamburger-bar-height)] bg-white rounded-full transition duration-200 origin-center appearance-none p-0 m-0 outline-none pointer-events-none checked:opacity-0 checked:w-0"
+                type="checkbox" name="hamburger">
         </label>
 
-        <aside class="sidebar">
+        <aside class="sidebar hidden">
             <nav class="menu">
                 {{/* <a class="menu-item" href="#">Experience</a> */}}
                 <a class="menu-item" href="#">About</a>
@@ -16,7 +19,7 @@
 
     </div>
 
-    <div class="navbar__container">
+    <div class="navbar__container hidden">
 
         <div class="navbar__social">
             <a href="https://github.com/madalinpopa" target="_blank">

@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+/*
+ * Site colors
+ */
+--light-color: #fff;
+--dark-color: #353839;
+--dark-lighter-color: #505050;
+--primary-color: #fcbe5b;
+--secondary-color: #f5604a;
+/*
+ * Hamburger button variables
+ */
+--hamburger-bg-color: var(dark_color);
+--hamburger-bar-width: 40px;
+--hamburger-bar-height: 8px;
+--hamburger-bar-gap: 6px;
+--hamburger-margin: 1rem;
+--hamburger-height: calc(var(--hamburger-bar-height) * 3 + var(--hamburger-bar-gap) * 2);
+--hamburger-animation-timing: 200ms ease-in-out;
+}
