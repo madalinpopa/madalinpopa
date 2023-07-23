@@ -8,7 +8,6 @@ module.exports = {
   mode: 'production',
   entry: [
     path.resolve(__dirname, 'src/assets/app.js'),
-    // path.resolve(__dirname, 'src/assets/css/main.css'),
   ],
   /**
    * Output configuration.
