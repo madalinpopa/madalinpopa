@@ -74,17 +74,18 @@ var __webpack_exports__ = {};
 /* harmony import */ var boxicons__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(boxicons__WEBPACK_IMPORTED_MODULE_0__);
 
 
-
-// Hamburger menu
-var hamburger = document.querySelector('.hamburger');
-var checkbox = document.querySelector("input[name='hamburger']");
-checkbox.addEventListener("change", function () {
-  if (this.checked) {
-    hamburger.classList.add('checked');
-  } else {
-    hamburger.classList.remove('checked');
-  }
-});
+var initApp = function initApp() {
+  var hamburgerBtn = document.querySelector('#hamburger-button');
+  var mobileMenu = document.querySelector("#mobile-menu");
+  var toggleMenu = function toggleMenu() {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    hamburgerBtn.classList.toggle('toggle-btn');
+  };
+  hamburgerBtn.addEventListener('click', toggleMenu);
+  mobileMenu.addEventListener('click', toggleMenu);
+};
+document.addEventListener('DOMContentLoaded', initApp);
 })();
 
 /******/ })()

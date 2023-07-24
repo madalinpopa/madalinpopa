@@ -1,27 +1,8 @@
-<div class="flex gap-4">
+<header>
+    <section class="flex p-4 justify-between items-center min-h-24">
 
-    <div class="md:hidden">
-
-        <label
-            class="flex flex-col gap-[6px] absolute top-4 left-4 z-10 after:content-[''] before:content-[''] w-[var(--hamburger-bar-width)] h-[var(--hamburger-bar-height)] bg-white rounded-full transition duration-200 origin-center">
-            <input
-                class="w-[var(--hamburger-bar-width)] h-[var(--hamburger-bar-height)] bg-white rounded-full transition duration-200 origin-center appearance-none p-0 m-0 outline-none pointer-events-none checked:opacity-0 checked:w-0"
-                type="checkbox" name="hamburger">
-        </label>
-
-        <aside class="sidebar hidden">
-            <nav class="menu">
-                {{/* <a class="menu-item" href="#">Experience</a> */}}
-                <a class="menu-item" href="#">About</a>
-                {{/* <a class="menu-item" href="#">Blog</a> */}}
-            </nav>
-        </aside>
-
-    </div>
-
-    <div class="navbar__container hidden">
-
-        <div class="navbar__social">
+        {{/* Social icons */}}
+        <div class="flex gap-2">
             <a href="https://github.com/madalinpopa" target="_blank">
                 <box-icon size='md' color='white' type='logo' name='github'></box-icon>
             </a>
@@ -33,13 +14,42 @@
             </a>
         </div>
 
-        <div class="navbar__menu">
-            <nav>
-                {{/* <a class="menu-item" href="#">Experience</a> */}}
-                <a class="menu-item" href="#">About</a>
-                {{/* <a class="menu-item" href="#">Blog</a> */}}
-            </nav>
-        </div>
-    </div>
+        {{/* Mobile menu */}}
+        <div class="md:hidden">
 
-</div>
+            <button id="hamburger-button" class="cursor-pointer">
+                <div class="bg-white w-8 h-1 rounded absolute right-4 top-8 -mt-0.5
+                before:content-['']
+                before:bg-white
+                before:h-1
+                before:w-8
+                before:rounded
+                before:absolute
+                before:transition-all
+                before:duration-500
+                before:-translate-x-4
+                before:-translate-y-3
+                after:bg-white
+                after:h-1
+                after:w-8
+                after:rounded
+                after:absolute
+                after:transition-all
+                after:duration-500
+                after:-translate-x-4
+                after:translate-y-3"></div>
+            </button>
+
+            <nav id="mobile-menu"
+                class="bg-gray-700 w-full min-h-[200px] animate-open-menu flex flex-col gap-4 items-center justify-center text-2xl p-4 absolute left-0 -right-4 top-24"
+                aria="mobile">
+                <a href="#">About</a>
+            </nav>
+
+        </div>
+
+
+        {{/* Hamburg button */}}
+        <div class=""></div>
+    </section>
+</header>

@@ -1,16 +1,18 @@
 import './main.css'
 import 'boxicons'
 
-// Hamburger menu
-var hamburger = document.querySelector('.hamburger');
-var checkbox = document.querySelector("input[name='hamburger']");
+const initApp = () => {
+    const hamburgerBtn = document.querySelector('#hamburger-button');
+    const mobileMenu = document.querySelector("#mobile-menu");
 
-checkbox.addEventListener("change", function () {
-    if (this.checked) {
-        hamburger.classList.add('checked');
-    } else {
-        hamburger.classList.remove('checked')
+    const toggleMenu = () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+        hamburgerBtn.classList.toggle('toggle-btn');
     }
-});
 
+    hamburgerBtn.addEventListener('click', toggleMenu);
+    mobileMenu.addEventListener('click', toggleMenu);
+}
 
+document.addEventListener('DOMContentLoaded', initApp);
