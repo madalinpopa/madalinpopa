@@ -17,5 +17,6 @@
     {{ $style := $bundle | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
     {{ end }}
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>{{ block "title" .}}{{ .Site.Title }}{{ end }}</title>
 </head>

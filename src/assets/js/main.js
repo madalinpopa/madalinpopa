@@ -84,6 +84,12 @@ var initApp = function initApp() {
   };
   hamburgerBtn.addEventListener('click', toggleMenu);
   mobileMenu.addEventListener('click', toggleMenu);
+  var themeBtn = document.querySelector("#theme-toggle");
+  var root = document.documentElement;
+  var toggleTheme = function toggleTheme() {
+    root.classList.toggle('dark');
+  };
+  themeBtn.addEventListener('click', toggleTheme);
 };
 document.addEventListener('DOMContentLoaded', initApp);
 })();

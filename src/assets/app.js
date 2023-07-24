@@ -11,8 +11,18 @@ const initApp = () => {
         hamburgerBtn.classList.toggle('toggle-btn');
     }
 
+
     hamburgerBtn.addEventListener('click', toggleMenu);
     mobileMenu.addEventListener('click', toggleMenu);
+
+    const themeBtn = document.querySelector("#theme-toggle");
+    const root = document.documentElement;
+
+    const toggleTheme = () => {
+        root.classList.toggle('dark');
+    }
+
+    themeBtn.addEventListener('click', toggleTheme);
 }
 
 document.addEventListener('DOMContentLoaded', initApp);

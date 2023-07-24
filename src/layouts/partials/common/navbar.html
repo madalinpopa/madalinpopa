@@ -1,16 +1,32 @@
+<style type="text/css" media="all">
+    input:checked+label {
+        background: linear-gradient(180deg, #374151, #000)
+    }
+
+    input:checked+label:after {
+        left: 50px;
+        transform: translateX(-100%);
+        background: linear-gradient(180deg, #777, #374151);
+    }
+
+    label,
+    label:after {
+        transition: 0.3s
+    }
+</style>
 <section>
-    <div class="flex justify-between items-center relative">
+    <div class="flex md:justify-between items-center relative">
 
         {{/* Social icons */}}
         <div class="flex gap-2 p-4">
             <a href="https://github.com/madalinpopa" target="_blank">
-                <box-icon size='md' color='white' type='logo' name='github'></box-icon>
+                <i class='bx bxl-github bx-md dark:text-gray-700'></i>
             </a>
             <a href="https://twitter.com/coderustle/" target="_blank">
-                <box-icon size='md' color='white' type='logo' name='twitter'></box-icon>
+                <i class='bx bxl-twitter bx-md dark:text-gray-700'></i>
             </a>
             <a href="https://www.linkedin.com/in/madalinpopa/" target="_blank">
-                <box-icon size='md' color='white' type='logo' name='linkedin'></box-icon>
+                <i class='bx bxl-linkedin bx-md dark:text-gray-700'></i>
             </a>
         </div>
 
@@ -18,9 +34,10 @@
         <div class="md:hidden">
 
             <button id="hamburger-button" class="appearance-none">
-                <div class="bg-white w-8 h-1 rounded absolute right-4 top-8 -mt-0.5
+                <div class="bg-white dark:bg-black w-8 h-1 rounded absolute right-4 top-8 -mt-0.5
                 before:content-['']
                 before:bg-white
+                dark:before:bg-black
                 before:h-1
                 before:w-8
                 before:rounded
@@ -30,6 +47,7 @@
                 before:-translate-x-4
                 before:-translate-y-3
                 after:bg-white
+                dark:after:bg-black
                 after:h-1
                 after:w-8
                 after:rounded
@@ -43,10 +61,18 @@
         </div>
 
         <nav id="mobile-menu"
-            class="bg-gray-700 min-h-[25vh] w-full animate-open-menu hidden flex-col gap-4 items-center justify-center text-2xl absolute top-[70px]"
+            class="bg-gray-700 dark:bg-gray-100 dark:text-gray-700 min-h-[25vh] w-full animate-open-menu hidden flex-col gap-4 items-center justify-center text-2xl absolute top-[70px]"
             aria="mobile">
             <a href="#">About</a>
         </nav>
+
+
+        {{/* Theme toggle button */}}
+        <div>
+            <input type="checkbox" name="theme-toggle" id="theme-toggle" class="w-0 h-0 hidden" checked />
+            <label for="theme-toggle"
+                class="w-[50px] h-[20px] relative md:right-4 block bg-gray-300 rounded-[20px] shadow-inner cursor-pointer after:content-[''] after:w-[18px] after:h-[18px] after:absolute after:top-[1px] after:left-[2px] after:rounded-[18px] after:shadow-md after:bg-gradient-to-r after:from-gray-300 after:to-gray-700">
+        </div>
 
     </div>
 
