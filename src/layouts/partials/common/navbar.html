@@ -1,8 +1,8 @@
-<header>
-    <section class="flex p-4 justify-between items-center min-h-24">
+<section>
+    <div class="flex justify-between items-center relative">
 
         {{/* Social icons */}}
-        <div class="flex gap-2">
+        <div class="flex gap-2 p-4">
             <a href="https://github.com/madalinpopa" target="_blank">
                 <box-icon size='md' color='white' type='logo' name='github'></box-icon>
             </a>
@@ -40,16 +40,14 @@
                 after:translate-y-3"></div>
             </button>
 
-            <nav id="mobile-menu"
-                class="bg-gray-700 w-full min-h-[200px] animate-open-menu hidden flex-col gap-4 items-center justify-center text-2xl p-4 absolute left-0 -right-4 top-24"
-                aria="mobile">
-                <a href="#">About</a>
-            </nav>
-
         </div>
 
+        <nav id="mobile-menu"
+            class="bg-gray-700 min-h-[25vh] w-full animate-open-menu hidden flex-col gap-4 items-center justify-center text-2xl absolute top-[70px]"
+            aria="mobile">
+            <a href="#">About</a>
+        </nav>
 
-        {{/* Hamburg button */}}
-        <div class=""></div>
-    </section>
-</header>
+    </div>
+
+</section>

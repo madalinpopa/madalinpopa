@@ -3,22 +3,22 @@
 
 {{ partial "common/head.html" . }}
 
-<body>
-<!-- Header block -->
-{{ block "header" . }}
-{{ end }}
+<body class="bg-gray-700 text-white">
+    <!-- Header block -->
+    {{ block "header" . }}
+    {{ end }}
 
-<!-- Main block -->
-{{ block "main" . }}
-<h2>Main content</h2>
-{{ end }}
+    <!-- Main block -->
+    {{ block "main" . }}
+    <h2>Main content</h2>
+    {{ end }}
 
-<!-- Footer block -->
-{{ block "footer" . }}
-{{ end }}
+    <!-- Footer block -->
+    {{ block "footer" . }}
+    {{ end }}
 
-<!-- Javascript partials -->
-{{ partial "common/scripts.html" }}
+    <!-- Javascript partials -->
+    {{ partial "common/scripts.html" }}
 
 </body>
 

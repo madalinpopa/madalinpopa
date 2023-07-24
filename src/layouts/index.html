@@ -1,27 +1,28 @@
+{{ define "header" }}
+<header>
+    {{ partial "common/navbar.html" }}
+</header>
+{{ end }}
+
 {{ define "main" }}
 <main>
-    <div class="bg-gray-700 h-screen text-white">
-
-        <!-- Navbar partials -->
-        {{ partial "common/navbar.html" }}
-
-        <div class="hidden">
-
-            <div class="home__profile-picture">
+    <section>
+        <div class="container px-4 mt-20 flex flex-col items-center gap-4">
+            <div class="max-w-[150px]">
                 {{ with resources.Get "images/profile.webp" }}
-                <img src="{{ .RelPermalink }}" alt="Madalin Popa">
+                <img class="w-full rounded-full shadow-lg" src="{{ .RelPermalink }}" alt="Madalin Popa">
                 {{ end }}
             </div>
 
-            <div class="home__text">
-                <h2 class="headline">Madalin Popa</h2>
-                <p class="body">
+            <div class="flex flex-col items-center gap-4">
+                <h2 class="text-3xl font-semibold">Madalin Popa</h2>
+                <p class="text-center max-w-xs">
                     Detail-oriented Full-Stack Developer and Self-Taught Programmer with over 8+ years of experience in
                     software development and troubleshooting
                 </p>
             </div>
 
         </div>
-    </div>
+    </section>
 </main>
 {{ end }}
