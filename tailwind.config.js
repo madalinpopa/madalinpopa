@@ -4,6 +4,14 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        primary: "#f5604a",
+        secondary: "#fcbe5b",
+        dark: "#202020",
+      },
+      container: {
+        center: true,
+      },
       keyframes: {
         'open-menu': {
           '0%': { transform: 'scaleY(0)' },
