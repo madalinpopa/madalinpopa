@@ -572,6 +572,9 @@ video {
 .h-\[80vh\] {
   height: 80vh;
 }
+.h-\[90vh\] {
+  height: 90vh;
+}
 .min-h-\[25vh\] {
   min-height: 25vh;
 }
@@ -965,6 +968,10 @@ video {
 
   .md\:right-4 {
     right: 1rem;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
