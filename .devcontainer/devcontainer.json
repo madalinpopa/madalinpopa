@@ -12,6 +12,9 @@
         "ghcr.io/devcontainers/features/node:1": {
             "nodeGypDependencies": true,
             "version": "lts"
+        },
+        "ghcr.io/devcontainers-contrib/features/neovim-homebrew:1": {
+            "version": "latest"
         }
     }
     // Features to add to the dev container. More info: https://containers.dev/features.
