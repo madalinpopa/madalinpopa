@@ -1022,6 +1022,9 @@ video {
 .gap-4 {
   gap: 1rem;
 }
+.gap-8 {
+  gap: 2rem;
+}
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1064,13 +1067,13 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .font-light {
   font-weight: 300;

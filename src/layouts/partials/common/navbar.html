@@ -68,11 +68,21 @@
             <a class="hover:text-secondary" href="">Blog</a>
         </nav>
 
-        {{/* Theme toggle button */}}
-        <div>
-            <input type="checkbox" name="theme-toggle" id="theme-toggle" class="w-0 h-0 hidden" checked />
-            <label for="theme-toggle"
-                class="w-[50px] h-[20px] relative md:right-4 block bg-gray-300 rounded-[20px] shadow-inner cursor-pointer after:content-[''] after:w-[18px] after:h-[18px] after:absolute after:top-[1px] after:left-[2px] after:rounded-[18px] after:shadow-md after:bg-gradient-to-r after:from-gray-300 after:to-gray-700">
+        <div class="flex gap-8 items-center">
+            <div class="hidden md:flex place-content-center">
+                <nav class="flex gap-4 text-primary">
+                    <a class="hover:text-secondary" href="/">Home</a>
+                    <a class="hover:text-secondary" href="/about">About</a>
+                    <a class="hover:text-secondary" href="">Experience</a>
+                    <a class="hover:text-secondary" href="">Blog</a>
+                </nav>
+            </div>
+            {{/* Theme toggle button */}}
+            <div>
+                <input type="checkbox" name="theme-toggle" id="theme-toggle" class="w-0 h-0 hidden" checked />
+                <label for="theme-toggle"
+                    class="w-[50px] h-[20px] relative md:right-4 block bg-gray-300 rounded-[20px] shadow-inner cursor-pointer after:content-[''] after:w-[18px] after:h-[18px] after:absolute after:top-[1px] after:left-[2px] after:rounded-[18px] after:shadow-md after:bg-gradient-to-r after:from-gray-300 after:to-gray-700">
+            </div>
         </div>
 
 
