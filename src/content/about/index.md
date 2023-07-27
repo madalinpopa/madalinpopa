@@ -22,3 +22,7 @@ Then I found out how much I could do with a simple bash script, and that got me 
 
 When I'm not engaged in technology-related activities, I enjoy spending my free time listening to music, reading books, and watching movies. When it's sunny out, I like to go on long walks and bike rides.
 
+19 years after my first computer today, I believe more than ever in Steve Jobs' quote:
+
+>Everybody in this country should learn to program a computer, because it teaches
+>you how to think ”- Steve Jobs.

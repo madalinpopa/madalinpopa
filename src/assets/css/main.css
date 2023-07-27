@@ -1019,6 +1019,9 @@ video {
 .max-w-\[400px\] {
   max-width: 400px;
 }
+.max-w-\[300px\] {
+  max-width: 300px;
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1629,6 +1632,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:float-right {
+    float: right;
+  }
 
   .lg\:text-4xl {
     font-size: 2.25rem;
