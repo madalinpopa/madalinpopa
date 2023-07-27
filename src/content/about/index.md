@@ -5,9 +5,9 @@ draft: false
 ---
 # Hey, I'm Madalin!
 
-- 🏢 I'm currently working at Microsoft as Azure Support Escalation Engineer
+- 🏢 I'm currently working at Microsoft part of OSS Azure App Service team
 - 🚀 I use daily: Python, JavaScript, Git, Bash, Tmux, Neovim
-- 💻 I work with: Docker, Django, Flask, PostgreSQL, Azure, GitHub, Node.js, Vue, htmx, Alpine.js
+- 💻 I work with: Linux, Docker, Django, Flask, PostgreSQL, Azure, GitHub, Node.js, Vue, htmx, Alpine.js
 
 ## About me
 
