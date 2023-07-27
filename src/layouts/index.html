@@ -1,33 +1,33 @@
 {{ define "main" }}
 <div class="container max-w-4xl mx-auto px-4 mt-20">
-<section>
-    <div class="flex flex-col items-center gap-4">
-
-        <div class="max-w-[150px]">
-            {{ with resources.Get "images/profile.webp" }}
-            <img class="w-full rounded-full shadow-lg" src="{{ .RelPermalink }}" alt="Madalin Popa">
-            {{ end }}
-        </div>
-
+    <section>
         <div class="flex flex-col items-center gap-4">
-            <h2 class="text-3xl lg:text-4xl font-semibold">Madalin Popa</h2>
-            <p class="text-center max-w-xs sm:max-w-md md:max-w-lg">
-                Detail-oriented Full-Stack Developer and Self-Taught Programmer with over 8+ years of experience in
-                software development and troubleshooting
-            </p>
-        </div>
 
-    </div>
-</section>
-<section class="hidden">
-    {{ $pages := (where .Site.RegularPages "Section" "posts").Limit 5 }}
+            <div class="max-w-[150px]">
+                {{ with resources.Get "images/profile.webp" }}
+                <img class="w-full rounded-full shadow-lg" src="{{ .RelPermalink }}" alt="Madalin Popa">
+                {{ end }}
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <h2 class="text-3xl lg:text-4xl font-semibold">Madalin Popa</h2>
+                <p class="text-center max-w-xs sm:max-w-md md:max-w-lg">
+                    Detail-oriented Full-Stack Developer and Self-Taught Programmer with over 8+ years of experience in
+                    software development and troubleshooting
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section class="hidden">
+        {{ $pages := (where .Site.RegularPages "Section" "posts").Limit 5 }}
         {{ range $pages }}
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p>{{ .Summary }}</p>
         <p>{{ .Date.Format "January 2, 2006" }}</p>
         <hr>
-    {{ end }}
-</section>
+        {{ end }}
+    </section>
 </div>
 
 {{ end }}
