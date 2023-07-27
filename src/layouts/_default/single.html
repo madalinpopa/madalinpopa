@@ -1,9 +1,8 @@
 {{ define "main" }}
-<section class="text-white dark:text-gray-700">
-    <div class="max-w-5xl border container px-4 mt-20 grid gap-4 auto-rows-max">
-        <h1 class="text-4xl">{{ .Title }}</h1>
+<section>
+    <div class="bg-gray-700 text-white max-w-4xl container px-4 mt-20 grid gap-4 auto-rows-max">
 
-        <div class="prose lg:prose-lg">
+        <div class="prose dark:prose-invert">
             {{ .Content }}
         </div>
     </div>
