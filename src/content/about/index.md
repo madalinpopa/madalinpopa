@@ -5,7 +5,7 @@ draft: false
 ---
 # Hey, I'm Madalin!
 
-- 🏢 I'm currently working at Microsoft part of OSS Azure App Service team
+- 🏢 I'm currently a part of the OSS Azure App Service team at Microsoft.
 - 🚀 I use daily: Python, JavaScript, Git, Bash, Tmux, Neovim
 - 💻 I work with: Linux, Docker, Django, Flask, PostgreSQL, Azure, GitHub, Node.js, Vue, htmx, Alpine.js
 
