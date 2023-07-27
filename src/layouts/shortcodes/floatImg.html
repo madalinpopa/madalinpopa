@@ -1,3 +1,5 @@
-<div class="container lg:float-right p-4 max-w-[300px]">
-    <img class="w-full rounded" src='{{ .Get "src" }}' alt='{{ .Get "alt" }}'>
+{{ $image := .Resources.GetMatch "madalin.jpg" }}
+
+<div class="float-right p-4 max-w-[300px]">
+    <img class="w-full rounded" src="{{ $image.RelPermalink }}" alt='Madalin Popa'>
 </div>

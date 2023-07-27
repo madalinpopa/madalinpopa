@@ -11,9 +11,6 @@ draft: false
 
 ## About me
 
-{{< floatImg src="madalin.jpg" alt="Madalin Popa" >}}
-
-
 I'm a self-taught learner, with a great passion for learning and technology. I live in Bucharest, the capital of Romania, the place where I was born.
 
 I got into IT when I was 14, and that's when I first found Linux. I fell in love with it instantly. Around the same time, I put together my first computer network and started learning more about it. I learned how to keep a network safe, set it up the right way, and fix any issues that came up. I loved it and spent a lot of time learning more.
