@@ -86,13 +86,15 @@ var initApp = function initApp() {
   mobileMenu.addEventListener('click', toggleMenu);
   var themeBtn = document.querySelector("#theme-toggle");
   var root = document.documentElement;
-  if (localStorage.theme === 'dark' || !('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    root.classList.toggle('dark');
-    themeBtn.checked = true;
-  } else {
-    localStorage.theme = 'light';
-    themeBtn.checked = false;
-  }
+
+  // if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  //     root.classList.toggle('dark');
+  //     themeBtn.checked = true;
+  // } else {
+  //     localStorage.theme = 'light';
+  //     themeBtn.checked = false;
+  // }
+
   var toggleTheme = function toggleTheme() {
     if ('theme' in localStorage && localStorage.theme == 'dark') {
       localStorage.theme = 'light';
