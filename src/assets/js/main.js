@@ -86,9 +86,25 @@ var initApp = function initApp() {
   mobileMenu.addEventListener('click', toggleMenu);
   var themeBtn = document.querySelector("#theme-toggle");
   var root = document.documentElement;
-  var toggleTheme = function toggleTheme() {
+  if (localStorage.theme === 'dark' || !('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     root.classList.toggle('dark');
+    themeBtn.checked = true;
+  } else {
+    localStorage.theme = 'light';
+    themeBtn.checked = false;
+  }
+  var toggleTheme = function toggleTheme() {
+    if ('theme' in localStorage && localStorage.theme == 'dark') {
+      localStorage.theme = 'light';
+      themeBtn.checked = false;
+    } else {
+      localStorage.theme = "dark";
+      themeBtn.checked = true;
+    }
+    root.classList.toggle('dark');
+    // themeBtn.checked = !themeBtn.checked;
   };
+
   themeBtn.addEventListener('click', toggleTheme);
 };
 document.addEventListener('DOMContentLoaded', initApp);
