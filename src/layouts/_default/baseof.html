@@ -3,19 +3,27 @@
 
 {{ partial "common/head.html" . }}
 
-<body class="bg-gray-700 dark:bg-white text-white dark:text-gray-700">
+<body class="bg-white dark:bg-gray-700 text-gray-700 dark:text-white ">
     <!-- Header block -->
-    {{ block "header" . }}
-    {{ end }}
+
+    <header>
+        {{ block "header" . }}
+        {{ partial "common/navbar.html" }}
+        {{ end }}
+    </header>
 
     <!-- Main block -->
-    {{ block "main" . }}
-    <h2>Main content</h2>
-    {{ end }}
-
+    <main class="min-h-[80vh] grid gap-4 auto-rows-max">
+        {{ block "main" . }}
+        <h2>Main content</h2>
+        {{ end }}
+    </main>
     <!-- Footer block -->
-    {{ block "footer" . }}
-    {{ end }}
+    <footer>
+        {{ block "footer" . }}
+        {{ partial "common/footer.html"}}
+        {{ end }}
+    </footer>
 
     <!-- Javascript partials -->
     {{ partial "common/scripts.html" }}
