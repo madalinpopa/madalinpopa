@@ -11,7 +11,7 @@ draft: false
 
 ## About me
 
-{{< floatImg src="./madalin.jpg" alt="Madalin Popa" >}}
+{{< floatImg src="madalin.jpg" alt="Madalin Popa" >}}
 
 
 I'm a self-taught learner, with a great passion for learning and technology. I live in Bucharest, the capital of Romania, the place where I was born.
