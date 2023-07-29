@@ -3,4 +3,5 @@ languageCode = "en-us"
 title = "Madalin Popa"
 enableEmoji = true
 enableGitInfo = true
+summaryLength = 10
 
