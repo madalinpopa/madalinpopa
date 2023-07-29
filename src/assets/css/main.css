@@ -1044,6 +1044,9 @@ video {
 .auto-rows-max {
   grid-auto-rows: max-content;
 }
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -1065,6 +1068,21 @@ video {
 .gap-8 {
   gap: 2rem;
 }
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-clip {
+  overflow: clip;
+}
+.overflow-x-auto {
+  overflow-x: auto;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1076,6 +1094,10 @@ video {
 }
 .border {
   border-width: 1px;
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-gray-300 {
   --tw-bg-opacity: 1;
@@ -1581,6 +1603,18 @@ video {
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(252 190 91 / var(--tw-text-opacity));
+}
+
+.prose-pre\:overflow-x-auto :is(:where(pre):not(:where([class~="not-prose"] *))) {
+  overflow-x: auto;
+}
+
+.prose-pre\:overflow-x-hidden :is(:where(pre):not(:where([class~="not-prose"] *))) {
+  overflow-x: hidden;
+}
+
+.prose-pre\:overflow-x-clip :is(:where(pre):not(:where([class~="not-prose"] *))) {
+  overflow-x: clip;
 }
 
 :is(.dark .dark\:bg-gray-700) {

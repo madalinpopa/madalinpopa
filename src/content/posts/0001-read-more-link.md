@@ -15,12 +15,12 @@ Here's our starting code:
 <div
     x-data="{ isCollapsed: false, maxLength: 300, originalContent: '', content: '' }"
     x-init="originalContent = $el.firstElementChild.textContent.trim(); content = originalContent.slice(0, maxLength)">
-    <p class="text-justify text-ellipsis overflow-hidden" x-text="isCollapsed ? originalContent : content">
+    <p x-text="isCollapsed ? originalContent : content">
         Some long text..
     </p>
     <button @click="isCollapsed = !isCollapsed"
         x-show="originalContent.length > maxLength"
-        x-text="isCollapsed ? 'Hide' : 'Show more'" class="text-blue">
+        x-text="isCollapsed ? 'Hide' : 'Show more'">
     </button>
 </div>
 ```
