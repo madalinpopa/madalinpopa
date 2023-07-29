@@ -31,6 +31,9 @@ jobs:
       - name: Build
         run: hugo --gc --cleanDestinationDir --minify --source ./src --destination ../dist
 
+      - name: Copy the staticwebapp.config.json file to the dist folder
+        run: cp ./staticwebapp.config.json ./dist
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
