@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <section>
-    <div class="max-w-4xl container px-4 mt-20 grid gap-12 auto-rows-max">
+    <div class="max-w-4xl container px-4 mt-20 grid gap-8 auto-rows-max">
 
         {{/* Header */}}
         <div class="prose prose-slate dark:prose-invert max-w-none md:prose-md lg:prose-lg">
@@ -12,7 +12,7 @@
             {{ range .Pages }}
             <article class="grid gap-2">
                 <div class="">
-                    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                    <h2 class="font-semibold py-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                     {{ .Summary }}
                 </div>
                 {{ if .Truncated }}
