@@ -1,5 +1,5 @@
-{{ $image := .Resources.GetMatch "madalin.jpg" }}
+{{ $image := .Page.Resources.GetMatch (printf "%s.*" (.Get "name")) }}
 
 <div class="float-right p-4 max-w-[300px]">
-    <img class="w-full rounded" src="{{ $image.RelPermalink }}" alt='Madalin Popa'>
+    <img class="w-full rounded" src="{{ $image.RelPermalink }}" alt='{{ .Get "alt" }}'>
 </div>
