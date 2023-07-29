@@ -33,4 +33,5 @@ Let's break it down:
 2. The `x-init` attribute sets up our initial state. In our case, `originalContent` starts off as the full text that we want to display. content starts off as the preview, or the first 300 characters of `originalContent`.
 3. The `p` tag includes `x-text`, which helps us switch between showing the full text or the preview based on whether `isCollapsed` is true or false.
 4. The button tag includes `@click` to switch `isCollapsed` from true to false or vice versa every time the button is clicked. The `x-show `attribute makes sure the button is only visible if the text is long enough to be shortened. Finally, `x-text` changes the button text based on whether the text is collapsed or not.
-5. And that's it! With just these few lines of code and Alpine.js, we can create a 'Read More' link. This is a great example of how useful and simple Alpine.js can be. It's a great tool for when you need a little bit of interactivity on your website but don't want to pull in a bigger tool.
+
+And that's it! With just these few lines of code and Alpine.js, we can create a 'Read More' link. This is a great example of how useful and simple Alpine.js can be. It's a great tool for when you need a little bit of interactivity on your website but don't want to pull in a bigger tool.
