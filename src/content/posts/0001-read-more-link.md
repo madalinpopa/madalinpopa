@@ -1,7 +1,7 @@
 ---
 title: "Making a 'Read More' Link Simply with Alpine.js"
 date: 2023-07-29T18:58:18Z
-draft: true
+draft: false
 tags: ["alpinejs"]
 ---
 
@@ -16,7 +16,7 @@ Here's our starting code:
     x-data="{ isCollapsed: false, maxLength: 300, originalContent: '', content: '' }"
     x-init="originalContent = $el.firstElementChild.textContent.trim(); content = originalContent.slice(0, maxLength)">
     <p class="text-justify text-ellipsis overflow-hidden" x-text="isCollapsed ? originalContent : content">
-        {{ value.text }}
+        Some long text..
     </p>
     <button @click="isCollapsed = !isCollapsed"
         x-show="originalContent.length > maxLength"
