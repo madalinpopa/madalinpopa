@@ -12,7 +12,8 @@
             {{ range .Pages }}
             <article class="grid gap-2">
                 <div class="">
-                    <h2 class="font-semibold py-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                    <h2 class="font-semibold py-2 hover:text-secondary"><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h2>
                     {{ .Summary }}
                 </div>
                 {{ if .Truncated }}

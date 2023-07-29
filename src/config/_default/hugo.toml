@@ -3,11 +3,14 @@ languageCode = "en-us"
 title = "Madalin Popa"
 enableEmoji = true
 enableGitInfo = true
-summaryLength = 10
+summaryLength = 30
 [params]
     AuthorName = 'Madalin Popa'
     GitHubUser = 'madalinpopa'
 [permalinks]
-    posts = '/:year/:month/:title/'
-
+    posts = "/:year/:month/:slug/"
+    page = "/:slug/"
+[sitemap]
+    changefreq = "weekly"
+    priority = 0.5
 
