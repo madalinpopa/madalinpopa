@@ -1,4 +1,10 @@
-<section class="font-light w-full text-center text-sm p-4">
+<section class="font-light flex flex-col gap-4 justify-center items-center w-full text-center text-sm p-4">
     &copy;
     <script>document.write(new Date().getFullYear())</script> &nbsp; Madalin Popa
+    <div class="max-w-sm flex flex-col gap-2">
+        <span>Powered by</span>
+        <div class="max-w-[100px]">
+            {{ partial "common/hugo.html" }}
+        </div>
+    </div>
 </section>
