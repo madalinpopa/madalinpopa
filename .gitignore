@@ -279,3 +279,6 @@ dist
 .pnp.*
 
 .hugo_build.lock
+
+# ignore generated css file
+src/assets/css/**
