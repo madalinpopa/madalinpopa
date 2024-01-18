@@ -1,5 +1,5 @@
 ## Hey, I'm Madalin!
 
-- 🏢 I'm currently working at Microsoft
-- 🚀 I use daily: Python, JavaScript, Git, Bash, Tmux, Neovim
-- 💻 I work using: Docker, Django, Flask, PostgreSQL, Azure, GitHub, Node.js, Vue, htmx, Alpine.js
+- 🏢 I'm DevOps Engineer Expert @ NHIH
+- 🚀 I use daily: Python, Docker, Kubernetes, Ansible, Tmux, Helix
+- 💻 I work using: Kuberentes, Docker, Ansible, Django, Proxmox
