@@ -5,7 +5,6 @@ enableEmoji = true
 enableGitInfo = true
 summaryLength = 30
 [params]
-    AuthorName = 'Madalin Popa'
     GitHubUser = 'madalinpopa'
 [permalinks]
     posts = "/:year/:month/:slug/"
