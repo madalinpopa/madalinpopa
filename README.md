@@ -7,8 +7,8 @@
 ## What I Use Daily 🚀  
 - **Languages**: Python, Go  
 - **DevOps Tools**: Docker, Kubernetes, Ansible  
-- **Editors**: Neovim 🖋️  
-- **Terminal**: Ghostty 💻  
+- **Editors**: Neovim 
+- **Terminal**: Ghostty
 - **Multiplexer**: Zellij  
 
 ---
@@ -16,7 +16,7 @@
 ## Other Tools I Work With 🛠️  
 - **Programming**: Bash, JavaScript, Astro, React, Django, HTMX  
 - **Automation**: Terraform, Azure DevOps  
-- **Cloud Providers**: Azure, AWS ☁️  
+- **Cloud Providers**: Azure, AWS
 - **Virtualization**: Proxmox, Vagrant  
-- **Version Control**: Git 🗂️  
+- **Version Control**: Git
 - **CI/CD**: ArgoCD, GitHub Actions  
