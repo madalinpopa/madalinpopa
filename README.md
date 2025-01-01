@@ -1,6 +1,6 @@
 # Hey, I'm Madalin 👋
 
-I'm a **Senior DevOps Engineer**. During the day, I focus on infrastructure, automation, and cloud solutions. In my free time, I enjoy building tools and exploring software development. ⚙️  
+I'm a **Senior DevOps Engineer**. During the day, I focus on infrastructure, automation, and cloud solutions. I enjoy Python for its simplicity and Go for its efficiency. In my free time, I build tools, explore software development, and find ways to automate repetitive tasks. ⚙️  
 
 ---
 
