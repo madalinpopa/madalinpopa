@@ -1,6 +1,6 @@
 # Hey, I'm Madalin 👋
 
-I'm a **Senior DevOps Engineer**. During the day, I focus on infrastructure, automation, and cloud solutions. I enjoy Python for its simplicity and Go for its efficiency. In my free time, I build tools, explore software development, and find ways to automate repetitive tasks. ⚙️  
+DevOps Engineer by day and Software Developer by night. I love Python’s expressiveness and GoLang’s simplicity. In my free time, I build tools, explore software development, and find ways to automate repetitive tasks. ⚙️  
 
 ---
 
@@ -14,9 +14,9 @@ I'm a **Senior DevOps Engineer**. During the day, I focus on infrastructure, aut
 ---
 
 ## Other Tools I Work With 🛠️  
-- **Programming**: Bash, JavaScript, Astro, React, Django, HTMX
+- **Programming**: Bash, JavaScript, Astro, React, Django, HTMX  
 - **Automation**: Terraform, Azure DevOps  
 - **Cloud Providers**: Azure, AWS ☁️  
 - **Virtualization**: Proxmox, Vagrant  
 - **Version Control**: Git 🗂️  
-- **CI/CD**: ArgoCD, GitHub Actions 
+- **CI/CD**: ArgoCD, GitHub Actions  
