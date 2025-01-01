@@ -19,9 +19,4 @@ I'm a **Senior DevOps Engineer**. During the day, I focus on infrastructure, aut
 - **Cloud Providers**: Azure, AWS ☁️  
 - **Virtualization**: Proxmox, Vagrant  
 - **Version Control**: Git 🗂️  
-- **CI/CD**: ArgoCD, GitHub Actions  
-
----
-
-## A Little More About Me ✨  
-I enjoy Python for its simplicity and Go for its efficiency. I like exploring new tools and finding ways to automate repetitive tasks. Most of my work revolves around improving workflows and creating robust infrastructure solutions.
+- **CI/CD**: ArgoCD, GitHub Actions 
