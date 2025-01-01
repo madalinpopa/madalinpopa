@@ -1,6 +1,6 @@
 # Hey, I'm Madalin 👋
 
-I'm a **Senior DevOps Engineer** at **ING Bank**. During the day, I focus on infrastructure, automation, and cloud solutions. In my free time, I enjoy building tools and exploring software development. ⚙️  
+I'm a **Senior DevOps Engineer**. During the day, I focus on infrastructure, automation, and cloud solutions. In my free time, I enjoy building tools and exploring software development. ⚙️  
 
 ---
 
