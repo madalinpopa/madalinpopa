@@ -14,7 +14,7 @@ I'm a **Senior DevOps Engineer**. During the day, I focus on infrastructure, aut
 ---
 
 ## Other Tools I Work With 🛠️  
-- **Programming**: Bash, JavaScript, Django  
+- **Programming**: Bash, JavaScript, Astro, React, Django, HTMX
 - **Automation**: Terraform, Azure DevOps  
 - **Cloud Providers**: Azure, AWS ☁️  
 - **Virtualization**: Proxmox, Vagrant  
