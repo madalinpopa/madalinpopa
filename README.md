@@ -1,6 +1,6 @@
 # Hey, I'm Madalin 👋
 
-DevOps Engineer by day and Software Developer by night. I love Python’s expressiveness and GoLang’s simplicity. In my free time, I build tools, explore software development, and find ways to automate repetitive tasks. ⚙️  
+**DevOps Engineer** by day and **Software Developer** by night. I love Python’s expressiveness and GoLang’s simplicity. In my free time, I build tools, explore software development, and find ways to automate repetitive tasks. ⚙️  
 
 ---
 
