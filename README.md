@@ -1,22 +1,20 @@
-# Hey, I'm Madalin 👋
+```bash
+$ whoami
+madalin@github:~$ DevOps Engineer | Software Developer
 
-**DevOps Engineer** by day and **Software Developer** by night. I love Python’s expressiveness and Go’s simplicity. In my free time, I build tools, explore software development, and find ways to automate repetitive tasks. ⚙️  
+$ echo "Passionate about automation, DevOps, and developer tools."
+⚙️ Automating repetitive work since... forever.
 
----
+$ cat daily-stack.txt
+Languages: Python, Go  
+DevOps: Docker, Kubernetes, Ansible, Prometheus, Grafana  
+Editor: Neovim  
+Terminal: Ghostty  
+Multiplexer: tmux  
 
-## What I Use Daily 🚀  
-- **Languages**: Python, Go  
-- **DevOps Tools**: Docker, Kubernetes, Ansible  
-- **Editors**: Neovim 
-- **Terminal**: Ghostty
-- **Multiplexer**: Zellij  
+$ ls other-tools/
+bash  terraform  astro  react  django  htmx  azure-devops  aws  azure  proxmox  argocd  github-actions  
 
----
-
-## Other Tools I Work With 🛠️  
-- **Programming**: Bash, JavaScript, Astro, React, Django, HTMX  
-- **Automation**: Terraform, Azure DevOps  
-- **Cloud Providers**: Azure, AWS
-- **Virtualization**: Proxmox, Vagrant  
-- **Version Control**: Git
-- **CI/CD**: ArgoCD, GitHub Actions  
+$ motto
+> "Build. Automate. Repeat — until it’s effortless."
+```
