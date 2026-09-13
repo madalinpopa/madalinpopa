@@ -8,7 +8,7 @@ $ echo "Passionate about automation, DevOps, and developer tools."
 $ cat daily-stack.txt
 Languages: Python, Go  
 DevOps: Docker, Kubernetes, Ansible, Prometheus, Grafana  
-Editor: Neovim  
+Editor: Helix  
 Terminal: Ghostty  
 Multiplexer: tmux  
 
