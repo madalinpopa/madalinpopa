@@ -16,5 +16,5 @@ $ ls other-tools/
 bash  terraform  astro  react  django  htmx  azure-devops  aws  azure  proxmox  argocd  github-actions  
 
 $ motto
-> "Build. Automate. Repeat — until it’s effortless."
+> "Build. Automate. Repeat, until it’s effortless."
 ```
